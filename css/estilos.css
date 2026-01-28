@@ -104,12 +104,19 @@ button:hover {
   background-blend-mode: normal;
   border-radius: 16px;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .encabezados h1 {
   color: #ffffff;
 }
 
+hr {
+  border: none;                /* Elimina el borde por defecto */
+  height: 1px;                 /* Grosor de la línea */
+  background-color: #ccc;      /* Color de la línea */              /* Ancho */
+  margin: 20px auto;   
+}
 
 /* COMIENZA CSS BOX MODEL */
 
@@ -190,6 +197,11 @@ border-radius: 16px;
 .bg-black {
   background-color: black;
 }
+
+.bg-lightgrey {
+  background-color: #d1d1d1;
+}
+
 .bg-red {
   background-color: red;
 }
@@ -222,3 +234,46 @@ border-radius: 16px;
     max-width: 80px;
 }
 /* //Bootstrap page */
+
+
+.imagenhome {
+    max-width: 20%;
+    border-radius: 16px;
+  }
+
+
+/*-----------------------------------------------------------------------------------*/
+/*    RESPONSIVOS
+/*-----------------------------------------------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+@media (min-width: 768px) and (max-width: 991px) {
+   .imagenhome {
+    max-width: 40%;
+  }
+
+     .herohome p {
+  max-width: 95%;
+}
+  
+}
+@media (max-width: 767px) {
+
+
+}
+
+@media (max-width: 479px) {
+  img {
+    max-width: 90%;
+  }
+  .imagenhome {
+    max-width: 90%;
+  }
+
+   .herohome p {
+  font-size: 1.1em;
+  max-width: 97%;
+}
+
+}
