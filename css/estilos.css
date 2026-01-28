@@ -37,6 +37,10 @@ ol {
   padding: 15px 10px 15px 45px;
 }
 
+img {
+  border-radius: 16px;
+}
+
 button,
 #btnSubmit {
   padding: 12px 18px;
@@ -63,6 +67,20 @@ button:hover {
   transition: 0.2s;
 }
 
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.btn-active {
+  background: black;
+  padding: 8px 10px;
+  border-radius: 5px;
+  text-transform: none;
+  text-decoration: none;
+  color: #fff;
+}
+
 .herohome {
   background-color: rgba(0, 0, 0, 0.35);
   background-image: url(../assets/img/hero.jpg);
@@ -86,6 +104,11 @@ button:hover {
   font-size: 1.2em;
   max-width: 45%;
 }
+
+.cta-hero {
+  color: #d1d1d1;
+}
+
 
 .bggray {
   background-color: #333;
@@ -138,6 +161,21 @@ border-radius: 16px;
 
 }
 
+.caja-contacto {
+  border: solid 1px #ccc;
+  background-color: #000;
+  display: inline-grid;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: revert-layer;
+  gap: 15px;
+  padding: 30px;
+  margin: 30px;
+  border-radius: 16px;
+  color: white;
+}
+
 .tarjeta {
   flex-direction: column;
   display: flex;
@@ -149,12 +187,16 @@ border-radius: 16px;
   background-color: black;
   color:white;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .tarjeta img {
   max-width: 20%;
   border-radius: 16px;
+  flex-direction: row;
+  justify-content: center;
 }
+
 
 .encanezado-flexbox{
   background-color: #f4f4f4;
@@ -174,6 +216,7 @@ border-radius: 16px;
 }
 
 /* TERMINA CSS BOX MODEL */
+
 
 
 /* Bootstrap page */
@@ -237,10 +280,13 @@ border-radius: 16px;
 
 
 .imagenhome {
-    max-width: 20%;
+    max-width: 25%;
     border-radius: 16px;
   }
 
+  textarea {
+  width: 100%;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*    RESPONSIVOS
@@ -248,6 +294,8 @@ border-radius: 16px;
 @media (min-width: 992px) and (max-width: 1199px) {
   
 }
+
+
 @media (min-width: 768px) and (max-width: 991px) {
    .imagenhome {
     max-width: 40%;
@@ -256,12 +304,17 @@ border-radius: 16px;
      .herohome p {
   max-width: 95%;
 }
+
+
   
-}
+} /* 78 a 991-Tablet*/
+
+
 @media (max-width: 767px) {
 
 
 }
+
 
 @media (max-width: 479px) {
   img {
@@ -276,4 +329,10 @@ border-radius: 16px;
   max-width: 97%;
 }
 
+.flexbox {
+  flex-direction: column;
 }
+
+
+
+} /*479 móviles*/
